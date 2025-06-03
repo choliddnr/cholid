@@ -14,13 +14,9 @@ heroImage: "/blog-placeholder-4.jpg"
 
 This is a simple app built to collect customer feedback about products.
 
----
-
 ## Why did I create this app?
 
 Initially, I created this app to gather feedback from my own customers. My goal was to keep it as simple as possible to ship quickly. However, as I worked on it, I realized the potential to turn it into a SaaS product. That’s when I began exploring different architectures and tech stacks to find the best fit for my goals.
-
----
 
 ## Architecture & Tech Stack
 
@@ -33,16 +29,12 @@ Later, I reconsidered the deployment strategy. Deploying PocketBase and Nuxt sep
 3.  [unstorage ](https://unstorage.unjs.io/) – Since I'm using Nuxt, I was already familiar with the UnJS ecosystem. `unstorage` was a natural fit for handling storage.
 4.  [better-auth](https://www.better-auth.com/) – For now, this library provides the best balance of flexibility and simplicity for authentication.
 
----
-
 ## Deployment
 
 For the demo, I deployed the app on [Cloudflare Pages](https://pages.cloudflare.com/) (a free hosting platform). Due to its limitations, I had to make a few adjustments:
 
 1. Switched to [Cloudflare D1](https://developers.cloudflare.com/d1/) for the database and implemented custom "transaction-like" logic, as D1 doesn’t support real transactions yet.
 2. Used [Bunny.net](https://bunny.net/) for external file storage, which provides a performant and affordable solution.
-
----
 
 ## What’s Next?
 
@@ -52,8 +44,6 @@ There’s still plenty of room for improvement:
 - Refactor parts of the codebase to improve reusability
 - Build and ship additional features like response analysis and better dashboard tools
 
----
-
 ## Key Features
 
 - Support for multiple merchants and products
@@ -62,15 +52,11 @@ There’s still plenty of room for improvement:
 - Clean dashboard interface
 - (More features coming soon…)
 
----
-
 ## Challenges I Faced
 
 - Replacing PocketBase’s full suite of features with minimal tools while maintaining simplicity
 - Implementing transaction-like behavior in Cloudflare D1
 - Handling file uploads and ensuring compatibility with Cloudflare Pages
-
----
 
 ## Try the App
 
