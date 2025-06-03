@@ -4,6 +4,7 @@
     "": {
       "name": "cholid",
       "dependencies": {
+        "cholid": ".",
         "@astrojs/mdx": "^4.3.0",
         "@astrojs/rss": "^4.0.11",
         "@astrojs/sitemap": "^3.4.0",
@@ -320,6 +321,8 @@
     "character-reference-invalid": ["character-reference-invalid@2.0.1", "", {}, "sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw=="],
 
     "chokidar": ["chokidar@4.0.3", "", { "dependencies": { "readdirp": "^4.0.1" } }, "sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA=="],
+
+    "cholid": ["cholid@file:", { "dependencies": { "@astrojs/mdx": "^4.3.0", "@astrojs/rss": "^4.0.11", "@astrojs/sitemap": "^3.4.0", "@tailwindcss/vite": "^4.1.8", "astro": "^5.8.1", "tailwindcss": "^4.1.8" }, "devDependencies": { "@tailwindcss/typography": "^0.5.16" } }],
 
     "chownr": ["chownr@3.0.0", "", {}, "sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g=="],
 
