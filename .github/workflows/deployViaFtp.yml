@@ -1,4 +1,4 @@
-name: Deploy Nuxt3 Static to CPanel via FTP
+name: Deploy Astro Static to CPanel via FTP
 
 on:
   push:
