@@ -7,7 +7,8 @@ const { data } = await useAsyncData(() =>
 );
 </script>
 <template>
-  <ContentRenderer v-if="data" :value="data" />
-
-  <div v-else>Home not found</div>
+  <div class="max-w-[640px] w-auto mx-auto my-20 px-5">
+    <LazyContentRenderer v-if="data" :value="data" />
+    <div v-else>Home not found</div>
+  </div>
 </template>
