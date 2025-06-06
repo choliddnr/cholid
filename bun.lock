@@ -4,12 +4,12 @@
     "": {
       "name": "cholid",
       "dependencies": {
-        "cholid": ".",
         "@astrojs/mdx": "^4.3.0",
         "@astrojs/rss": "^4.0.11",
         "@astrojs/sitemap": "^3.4.0",
         "@tailwindcss/vite": "^4.1.8",
         "astro": "^5.8.1",
+        "cholid": ".",
         "tailwindcss": "^4.1.8",
       },
       "devDependencies": {

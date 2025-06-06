@@ -16,7 +16,7 @@ const { title, description, date } = Astro.props;
 		<BaseHead title={title} description={description} />
 	</head>
 
-	<body>
+	<body class="bg-amber-50">
 		<main>
 			<article class="font-mono">
 				<div class="max-w-[720px] mx-auto px-5 mt-10 text-mono">
@@ -24,7 +24,7 @@ const { title, description, date } = Astro.props;
 						<div class="flex flex-row justify-between mb-2">
 							<FormattedDate date={date} />
 
-							<a href="/profile/cholid" class="relative inline-block text-gray-800 px-3 py-1
+							<a href="/" class="relative inline-block text-gray-800 px-3 py-1
          before:content-[''] before:absolute before:inset-x-0 before:bottom-0
          before:h-1/4 before:bg-sky-300 before:z-[-1]
          before:transition-all before:duration-300

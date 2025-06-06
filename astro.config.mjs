@@ -10,8 +10,7 @@ export default defineConfig({
   site: "https://example.com",
   integrations: [mdx(), sitemap()],
   redirects: {
-    "/": "/profile/cholid",
-    "/profile": "/profile/cholid",
+    "/profile": "/",
     "/project": "/project/feedback",
   },
   vite: {

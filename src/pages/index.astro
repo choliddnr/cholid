@@ -1,0 +1,17 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import { render } from 'astro:content';
+import Profile from '../layouts/Profile.astro';
+import Prose from '../components/Prose.astro';
+
+type Post = CollectionEntry<'profile'>;
+const posts = (await getCollection('profile'))
+const post = posts.find(p=>p.id === 'cholid') as Post
+const { Content } = await render(post);
+---
+
+<Profile {...post.data}>
+	<Prose>
+		<Content />
+	</Prose>
+</Profile>
