@@ -11,7 +11,6 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   redirects: {
     "/profile": "/",
-    "/project": "/project/feedback",
   },
   vite: {
     plugins: [tailwindcss()],

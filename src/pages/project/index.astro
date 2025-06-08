@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const posts = (await getCollection("project")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<Layout
+  title="Cholid's Project"
+  description="Every project I have done"
+  links={[{ path: "/", label: "About Me" }]}
+>
+  <section>
+    <ul>
+      {
+        posts.map((post) => (
+          <li class="mb-10">
+            <a href={`/project/${post.id}/`} class="my-5">
+              <h4 class="text-5xl underline font-bold">{post.data.title}</h4>
+              <i class="mb-5">
+                <FormattedDate date={post.data.date} />
+              </i>
+              <p class="mt-2">{post.data.description}</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Layout>

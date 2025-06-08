@@ -1,0 +1,51 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import "../styles/global.css";
+
+type Props = {
+  title: string;
+  description: string;
+  date?: Date;
+  links: { path: string; label: string }[];
+};
+
+const { title, description, date, links } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+
+  <body class="bg-amber-50">
+    <main>
+      <article class="font-mono">
+        <div class="max-w-[720px] mx-auto px-5 mt-10">
+          <div>
+            <div class="flex flex-row-reverse justify-between mb-2">
+              <div class="flex flex-row gap-3">
+                {
+                  links.map((link) => (
+                    <a
+                      href={link.path}
+                      class="relative inline-block text-gray-800 px-3 py-1
+							before:content-[''] before:absolute before:inset-x-0 before:bottom-0
+							before:h-1/4 before:bg-sky-300 before:z-[-1]
+							before:transition-all before:duration-300
+							hover:before:h-full"
+                    >
+                      {link.label}
+                    </a>
+                  ))
+                }
+              </div>
+              {date && <FormattedDate date={date} />}
+            </div>
+          </div>
+          <slot />
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
