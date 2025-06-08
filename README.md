@@ -1,68 +1,27 @@
-# Astro Starter Kit: Blog
+# Portfolio
 
-```sh
-bun create astro@latest -- --template blog
-```
+## What is this?
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+This website is my personal portfolio and blog.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Why did I create this website?
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+I built this site to showcase who I am, what I've done, and to share my thoughts through a blog.
 
-Features:
+## Architecture & Tech Stack
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+Before building this website, I considered four tech options: native PHP, VitePress, Nuxt with nuxt/content, and Astro.
 
-## 🚀 Project Structure
+Among these, only PHP was something I had used before. I’ve worked with Nuxt for building web apps, but I had never used nuxt/content to create a static blog or portfolio. As for VitePress and Astro, I was aware of them but had never tried them.
 
-Inside of your Astro project, you'll see the following folders and files:
+Based on what I’d read, Astro seemed like the best fit for a static site like this because of its ability to deliver zero JavaScript to the client. That makes Astro blazing fast.
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+Even though I had no prior experience with Astro, I initially decided to go with Nuxt and nuxt/content since I was more familiar with Nuxt. While working on the site, I also started learning Astro — and I quickly realized it was very straightforward and easy to use for this type of website.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Eventually, I migrated the site from Nuxt to Astro.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## CI/CD
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+This website is deployed on my own hosting. To streamline the deployment process, I use GitHub Actions to build the project and automatically upload it to the server whenever I push to the main branch.
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+🛠️ **Source Code**: [https://github.com/choliddnr/cholid](https://github.com/choliddnr/cholid)
