@@ -34,7 +34,7 @@ Later, I reconsidered the deployment strategy. Deploying PocketBase and Nuxt sep
 For the demo, I deployed the app on [Cloudflare Pages](https://pages.cloudflare.com/) (a free hosting platform). Due to its limitations, I had to make a few adjustments:
 
 1. Switched to [Cloudflare D1](https://developers.cloudflare.com/d1/) for the database and implemented custom "transaction-like" logic, as D1 doesn’t support real transactions yet.
-2. Used [Bunny.net](https://bunny.net/) for external file storage, which provides a performant and affordable solution.
+2. Used [Wasabi](https://wasabi.com/) for external file storage, which provides a performant and affordable solution. It's support [aws-s3 SDK](https://www.npmjs.com/package/@aws-sdk/client-s3).
 
 ## What’s Next?
 
@@ -62,3 +62,7 @@ There’s still plenty of room for improvement:
 
 🧪 **Live Demo**: [https://feedback-demo.pages.dev](https://feedback-demo.pages.dev)  
 🛠️ **Source Code**: [https://github.com/choliddnr/feedback](https://github.com/choliddnr/feedback)
+
+**Video Demo**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3_CbTY35Q8w?si=zNEL60H9_el_NvTG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
