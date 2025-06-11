@@ -1,7 +1,7 @@
 ---
 title: Feedback App
 description: A simple app for collecting customer feedback, built with Nuxt 3 and deployed on Cloudflare Pages.
-date: 2025-06-02
+date: 2025-06-11
 tags: [nuxt, saas, sqlite, drizzle, feedback]
 cover: /images/feedback-cover.png
 pubDate: "Jul 15 2022"
@@ -65,4 +65,4 @@ There’s still plenty of room for improvement:
 
 **Video Demo**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3_CbTY35Q8w?si=zNEL60H9_el_NvTG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7wqGtayoqtI?si=JCSb_OZHpVpal9Ql" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
