@@ -10,6 +10,7 @@ const project = defineCollection({
     description: z.string(),
     // Transform string to Date object
     date: z.coerce.date(),
+    tags: z.array(z.string()).optional(),
   }),
 });
 

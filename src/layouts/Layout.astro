@@ -8,9 +8,10 @@ type Props = {
   description: string;
   date?: Date;
   links: { path: string; label: string }[];
+  tags?: string[];
 };
 
-const { title, description, date, links } = Astro.props;
+const { title, description, date, links, tags } = Astro.props;
 ---
 
 <html lang="en">
@@ -43,6 +44,17 @@ const { title, description, date, links } = Astro.props;
               {date && <FormattedDate date={date} />}
             </div>
           </div>
+          {
+            tags && (
+              <div class="mt-2 flex flex-wrap gap-2">
+                {tags.map((tag) => (
+                  <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-sm">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )
+          }
           <slot />
         </div>
       </article>
